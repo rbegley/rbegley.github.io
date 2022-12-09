@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Richard Begley</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="stylesheet" href="site.css">
+    </head>
+    <body>
+        <h1>Richard Begley</h1>
+        <p>
+            Director of Engineering @ <a href="https://www.xero.com/">Xero</a>
+        </p>
+        <p>
+            <a id="email" href="">Mail</a> | <a href="https://www.linkedin.com/in/richardpbegley/">LinkedIn</a>
+        </p>
+    </body>
+
+    <script>
+        function createMail() {
+            let to = "hello"
+            let at = "@"
+            let domain = "richardpbegley"
+            let tld = "ca"
+            let dot = "."
+            return to + at + domain + dot + tld
+        }
+        setTimeout(function() {
+            let mail = createMail()
+            document.getElementById('email').href = "mailto://" + mail;
+        }, 500);
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXG1CDVBGZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BXG1CDVBGZ');
+    </script>
+</html>
